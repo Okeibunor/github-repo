@@ -1,47 +1,13 @@
-const github_data = {
-  "token": "token",
-  "username": "Okeibunor"
-}
-
-// GraphQL Query 
-const body = {
-  "query": `
-    query{
-      user(login: "Okeibunor") {
-        avatarUrl,
-        login,
-        name,
-        bio,
-        repositories(first: 20, orderBy: {field: UPDATED_AT, direction: DESC}) {
-          nodes {
-            name,
-            url,
-            description,
-            updatedAt,
-            forkCount,
-            stargazerCount,
-            primaryLanguage {
-              name,
-              color
-            }
-          }
-        }
-      }
-    }`
-}
-
-const baseUrl = "https://api.github.com/graphql";
+const baseUrl = "https://hopeful-wright-3150c9.netlify.app/.netlify/functions/getData";
 
 const headers = {
   "Content-Type": "application/json",
-  Authorization: "bearer " + github_data.token
 }
 
 // Make Fetch Request with Native Javascript Fetch API
 fetch(baseUrl, {
-  method: "POST",
+  method: "GET",
   headers: headers,
-  body: JSON.stringify(body)
 }).then(response => response.json()).then(data => {
   let repoArray = data.data.user.repositories.nodes;
   let output = '';
