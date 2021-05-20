@@ -8,7 +8,11 @@ const headers = {
 fetch(baseUrl, {
   method: "GET",
   headers: headers,
-}).then(response => response.json()).then(data => {
+}).then(response => {
+  console.log(response)
+  console.log(response.json())
+  return response.json()
+}).then(data => {
   let repoArray = data.data.user.repositories.nodes;
   let output = '';
   console.log(repoArray)
