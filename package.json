@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:lambda": "netlify-lambda serve netlify/functions",
-    "prod":"netlify-lambda build netlify/functions"
+    "prod": "netlify-lambda build netlify/functions"
   },
   "repository": {
     "type": "git",
