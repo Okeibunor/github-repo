@@ -9,7 +9,7 @@ fetch(baseUrl, {
   method: "GET",
   headers: headers,
 }).then(response => response.json()).then(data => {
-  let repoArray = data.data.user.repositories.nodes;
+  let repoArray = data.data;
   let output = '';
   repoArray.forEach(element => {
     let date = new Date(element.updatedAt)
