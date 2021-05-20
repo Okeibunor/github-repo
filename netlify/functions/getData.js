@@ -1,5 +1,6 @@
 
 import fetch from "node-fetch"
+require('dotenv').config()
 
 const github_data = {
     "token": process.env.API_KEY,

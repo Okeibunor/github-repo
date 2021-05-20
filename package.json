@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Okeibunor/repo.github.io#readme",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "netlify-lambda": "^2.0.7",
     "node-fetch": "^2.6.1"
   }
