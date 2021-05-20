@@ -1,4 +1,4 @@
-const baseUrl = "https://github-repo-okeibunor.netlify.app";
+const baseUrl = "https://github-repo-okeibunor.netlify.app/.netlify/functions/getData";
 
 const headers = {
   "Content-Type": "application/json",
