@@ -1,4 +1,4 @@
-const baseUrl = "https://hopeful-wright-3150c9.netlify.app/.netlify/functions/getData";
+const baseUrl = "https://github-repo-okeibunor.netlify.app/";
 
 const headers = {
   "Content-Type": "application/json",
