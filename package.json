@@ -1,0 +1,25 @@
+{
+  "name": "githubrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:lambda": "netlify-lambda serve netlify/functions",
+    "prod":"netlify-lambda build netlify/functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okeibunor/repo.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okeibunor/repo.github.io/issues"
+  },
+  "homepage": "https://github.com/Okeibunor/repo.github.io#readme",
+  "dependencies": {
+    "netlify-lambda": "^2.0.7",
+    "node-fetch": "^2.6.1"
+  }
+}
