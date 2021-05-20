@@ -8,14 +8,10 @@ const headers = {
 fetch(baseUrl, {
   method: "GET",
   headers: headers,
-}).then(response => {
-  console.log(response)
-  console.log(response.json())
-  return response.json()
-}).then(data => {
+}).then(response => JSON.parse(response)).then(data => {
+  console.log(data)
   let repoArray = data.data.user.repositories.nodes;
   let output = '';
-  console.log(repoArray)
   repoArray.forEach(element => {
     let date = new Date(element.updatedAt)
     let language = element.primaryLanguage
