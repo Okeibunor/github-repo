@@ -79,6 +79,10 @@
     background-color: #fff;
 }
 
+.sticky+.container {
+    padding-top: 100px;
+}
+
 .bottom-nav ul {
     display: flex;
     margin: unset;
