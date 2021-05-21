@@ -111,7 +111,7 @@
 }
 
 .avatar-compressed {
-    width: 22vw;
+    width: 24vw;
     padding: 0 0 .5rem 3rem;
     visibility: hidden;
     transition: visibility 2s ease-in-out;
