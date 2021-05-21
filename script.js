@@ -63,7 +63,7 @@ var navHeight = header.offsetTop;
 
 var avatarCompressed = document.querySelector(".avatar-compressed");
 var lorem = document.querySelector(".avatar-container")
-var avatarHeight = lorem.offsetTop + 150;
+var avatarHeight = lorem.offsetTop + 200;
 
 function stickyNav() {
   if (window.pageYOffset > navHeight) {
