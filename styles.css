@@ -117,12 +117,12 @@
 .avatar-compressed {
     width: 24vw;
     padding: 0 0 .5rem 3rem;
-    visibility: hidden;
-    transition: visibility 2s ease-in-out;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
 }
 
 .avatar-compressed.show {
-    visibility: visible;
+    opacity: 1;
 }
 
 .navbar ul {
