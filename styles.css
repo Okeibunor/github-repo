@@ -65,11 +65,19 @@
 
 .bottom-nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
     border-bottom: 0.5px solid #eaecef;
     padding-top: 2.3rem;
     ;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
 }
 
 .bottom-nav ul {
@@ -103,6 +111,16 @@
     color: #24292e;
 }
 
+.avatar-compressed {
+    width: 22vw;
+    padding: 0 0 .5rem 3rem;
+    visibility: hidden;
+    transition: visibility 2s ease-in-out;
+}
+
+.avatar-compressed.show {
+    visibility: visible;
+}
 
 .navbar ul {
     display: flex;
@@ -139,12 +157,6 @@
 
 .navbar.dark a:hover {
     color: #a5a7aa;
-}
-
-.navbar.sticky {
-    position: fixed;
-    top: 0%;
-    width: 100%;
 }
 
 li {
@@ -402,10 +414,16 @@ a {
     object-fit: contain;
     border-radius: 50%;
     transform: translateY(-12.5%);
+    z-index: 5;
 }
 
 .avatar-sm {
     display: none;
+}
+
+.avatar-rounded {
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 .btn-group {
