@@ -557,7 +557,9 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-    .avatar {}
+    .avatar {
+        width: 20%;
+    }
 
     .avatar-sm {
         display: unset;
