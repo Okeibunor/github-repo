@@ -557,9 +557,7 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-    .avatar {
-        display: none;
-    }
+    .avatar {}
 
     .avatar-sm {
         display: unset;
