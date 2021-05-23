@@ -94,7 +94,15 @@
     margin: unset;
 }
 
+.sm-nav {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
+    .sm-nav {
+        display: flex;
+    }
+
     .bottom-nav ul {
         width: 100vw;
         overflow-x: scroll;
@@ -103,6 +111,14 @@
     .bottom-nav ul li {
         padding: unset;
         margin: unset;
+    }
+
+    .bottom-nav ul li.active {
+        width: 50vw;
+    }
+
+    .octicon-lg {
+        display: none;
     }
 }
 
@@ -156,7 +172,23 @@
     justify-content: space-evenly;
     margin: unset;
     padding: 0 1.5rem;
+}
 
+
+@media only screen and (max-width: 600px) {
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: none;
+    }
+
+    .nav-right ul li .notification {
+        display: block;
+    }
 }
 
 .navbar ul:first-of-type li {
